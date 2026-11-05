@@ -1,0 +1,19 @@
+{
+  "name": "bar-shop-pos-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bar Shop POS and inventory management - localhost edition",
+  "scripts": {
+    "start": "node backend-node/server.js",
+    "dev": "node backend-node/server.js",
+    "setup:frontend": "npm --prefix frontend install",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.9",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6"
+  }
+}

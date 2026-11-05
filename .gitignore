@@ -1,0 +1,28 @@
+# Environment files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+# Dependencies
+node_modules/
+# React build
+frontend/build/
+# Backend backups
+backend-node/backups/
+# Logs
+*.log
+npm-debug.log*
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+.env.*
+!.env.example
+build/
+dist/
+uploads/
+*.log
