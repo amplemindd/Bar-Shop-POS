@@ -30,7 +30,9 @@ const { startAutoBackup } = require("./routes/system");
 
 // Server Configuration
 const PORT = Number(process.env.PORT) || 5000;
-const HOST = "127.0.0.1";
+// Hosting platform (GoDaddy etc.) gives PORT -> listen on all interfaces so its health check can reach us.
+// Locally (no PORT given) stay on 127.0.0.1 only.
+const HOST = process.env.HOST || (process.env.PORT ? "0.0.0.0" : "127.0.0.1");
 
 // Allowed Frontend Origins
 // Multiple origins can be separated by commas in .env
